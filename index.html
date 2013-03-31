@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Words and stuff</title>
+    <link rel="stylesheet" href="css/tophat.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body spellcheck="false">
+    <div class="header row">
+      <div class="col12 center">
+        <h1 class="mega">Words</h1>
+        <p class="intro">Write without distractions</p>
+        <p><a class="btn newFile">New File</a> <a class="btn openFile hide">Open File</a> <select class="hide openFileName"></select></p>
+      </div>
+    </div>
+    <footer>A little something by <a href="http://campinhos.pt">João Campinhos</a></footer>
+    <div class="app hide">
+      <div class="center top">
+        <p>
+          <span><a class="icon"><i data-value="save" class="save icon-save icon-large"></i></a></span>
+          <span><a class="icon"><i data-value="settings" class="settings icon-cog icon-large"></i></a></span>
+          <span><a class="icon"><i class="fullScreen icon-fullscreen icon-large"></i></a></span>
+        </p>
+        <div id="settings" class="popover hide">
+          <a class="btnone markDown" >MarkDown</a>
+        </div>
+        <div id="save" class="popover hide">
+          <input type="text" placeholder="File Name" class="name">
+          <a class="btnone saveFile" >Save</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col12">
+          <textarea class="editable normal">Edit me</textarea>
+          <div class="hide preview"></div>
+        </div>
+      </div>
+      <div class="center bot">
+        <p><strong><span class="fileName"></span><span class="wordCount">0</span> Words &bull; <span class="charCount">0</span> Characters</strong></p>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/showdown.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
